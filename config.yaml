@@ -10,7 +10,7 @@ node_network: "192.168.8.0/24"
 # (REQUIRED) Use only 1, 3 or more ODD number of controller nodes, recommended is 3. Worker nodes are optional.
 node_inventory:
   - name: "control-plane-1"            # (REQUIRED) Name of the node (must match [a-z0-9-\]+)
-    address: "192.168.8.147"         # (REQUIRED) IP address of the node
+    address: "192.168.8.1"         # (REQUIRED) IP address of the node
     controller: true    # (REQUIRED) Set to true if this is a controller node
     disk: "/dev/sda"            # (REQUIRED) Device path or serial number of the disk for this node (talosctl get disks -n <ip> --insecure)
     mac_addr: "bc:24:11:19:6a:e1"        # (REQUIRED) MAC address of the NIC for this node, must be lowercase (talosctl get links -n <ip> --insecure)
