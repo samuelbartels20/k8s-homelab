@@ -31,7 +31,7 @@ jobs:
       - name: Setup mise
         uses: jdx/mise-action@v2
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.TOKEN }}"
 
       - name: Install dependencies
         run: mise run deps

@@ -52,4 +52,4 @@ jobs:
         with:
           generateReleaseNotes: true
           tag: "${{ steps.determine-next-tag.outputs.result }}"
-          token: "${{ secrets.GITHUB_TOKEN }}"
+          token: "${{ secrets.TOKEN }}"
