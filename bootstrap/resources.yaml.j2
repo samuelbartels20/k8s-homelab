@@ -33,8 +33,8 @@ metadata:
   name: onepassword-secret
   namespace: external-secrets
 stringData:
-  1password-credentials.json: op://kubernetes/1password-credentials.json/1password-credentials.json
-  token: op://kubernetes/token/credential
+  1password-credentials.json: op://homelab-cluster/1password/1password-credentials.json
+  token: op://homelab-cluster/1password/credential
 ---
 apiVersion: v1
 kind: Secret
