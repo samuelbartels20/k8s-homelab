@@ -19,3 +19,7 @@ resources:
   - ./one-password.yaml
   - ./actions-runner-controller.yaml
   - ./prometheus-community.yaml
+  - ./prometheus-operator.yaml
+  - ./piraeus.yaml
+  - ./gatus.yaml
+  - ./kube-prometheus-stack.yaml
