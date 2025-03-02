@@ -23,7 +23,7 @@ spec:
     controllers:
       onepassword:
         annotations:
-          secret.reloader.stakater.com/reload: &secret onepassword-secret
+          secret.reloader.stakater.com/reload: &secret op-credentials
         strategy: RollingUpdate
         containers:
           api:
@@ -38,7 +38,7 @@ spec:
               OP_SESSION:
                 valueFrom:
                   secretKeyRef:
-                    name: onepassword-secret
+                    name: op-credentials
                     key: 1password-credentials.json
             probes:
               liveness:
@@ -82,7 +82,7 @@ spec:
               OP_SESSION:
                 valueFrom:
                   secretKeyRef:
-                    name: onepassword-secret
+                    name: op-credentials
                     key: 1password-credentials.json
             probes:
               readiness:
