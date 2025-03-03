@@ -22,4 +22,5 @@ resources:
   #- ./prometheus-operator.yaml
   - ./piraeus.yaml
   - ./gatus.yaml
+  - ./homepage.yaml
   #- ./kube-prometheus-stack.yaml
