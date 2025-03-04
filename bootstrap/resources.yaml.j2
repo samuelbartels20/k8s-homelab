@@ -24,8 +24,8 @@ metadata:
     controller.cert-manager.io/fao: "true"
 type: kubernetes.io/tls
 data:
-  tls.crt: op://homelab-cluster/samcloud-online-tls/tls.crt
-  tls.key: op://homelab-cluster/samcloud-online-tls/tls.key
+  tls.crt: op://k8s/samcloud-online-tls/tls.crt
+  tls.key: op://k8s/samcloud-online-tls/tls.key
 ---
 apiVersion: v1
 kind: Secret
@@ -42,4 +42,4 @@ metadata:
   name: sops-age
   namespace: flux-system
 stringData:
-  age.agekey: op://homelab-cluster/sops/SOPS_PRIVATE_KEY
+  age.agekey: op://k8s/sops/SOPS_PRIVATE_KEY
